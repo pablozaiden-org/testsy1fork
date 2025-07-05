@@ -173,7 +173,7 @@ configure_orchestrator() {
   if [[ $is_mac == 0 ]]; then
     sedCommand="sed -i '' -e "
   fi
-  eval "git grep -l 'rg-lwiuyyav-162' | xargs $sedCommand \"s/rg-lwiuyyav-162/${SYMPHONY_RG_NAME}/g\""
+  eval "git grep -l 'rg-kqaqpsqi-122' | xargs $sedCommand \"s/rg-kqaqpsqi-122/${SYMPHONY_RG_NAME}/g\""
   eval "git grep -l 'AzureCloud' -- ':!*_helpers.sh' | xargs $sedCommand \"s/AzureCloud/$SP_CLOUD_ENVIRONMENT/g\""
 
   if [ "$IACTOOL" == "bicep" ]; then
