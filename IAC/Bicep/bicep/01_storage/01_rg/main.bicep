@@ -3,6 +3,7 @@ targetScope = 'subscription'
 param environment string
 param layerName string
 param location string = deployment().location
+
 param deploymentName string = ''
 param resourceGroupName string = ''
 
